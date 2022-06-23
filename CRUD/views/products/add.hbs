@@ -1,0 +1,39 @@
+<div class="card">
+  <div class="card-header text-center">
+    <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      NEW PRODUCT</h2>
+  </div>
+  {{!  }}
+
+  <div class="card-body">
+    <form method="post" action="">
+
+      <div class="form-group">
+        <label for="txtProName">PRODUCT</label>
+        <input type="text" class="form-control" name="txtProName" id="txtProName" placeholder="Type Item" autofocus/>
+        <br>
+        <label for="txtProPrice">PRICE</label>
+        <input type="text" class="form-control" name="txtProPrice" id="txtProPrice" placeholder="Type Item" autofocus/>
+        <br>
+        <label for="txtProRest">REST</label>
+        <input type="text" class="form-control" name="txtProRest" id="txtProRest" placeholder="Type Item" autofocus/>
+      </div>
+      <a class="btn btn-success" href="/admin/product" role="button" title="Back to List">
+        <i class="fa fa-backward" aria-hidden="true"></i>
+        Cancel
+      </a>
+
+      <button type="submit" class="btn btn-primary">
+        <i class="fa fa-check" aria-hidden="true"></i>
+        SAVE
+      </button>
+
+    </form>
+  </div>
+
+  <div class="card-footer text-muted text-center">
+    <i>
+      KYUN SHOPPING - BRING TO YOU THE BEST SERVICE
+    </i>
+  </div>
+</div>

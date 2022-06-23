@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* margin: 0 0; */
+    font-weight: bold;
+    font-family: 'Comic Neue', cursive;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1/10 9/10;
+}
+
+.subject {
+    display: grid;
+    grid-template-columns: 120px auto;
+}
+
+.sub-list {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    align-items: center;
+}
+
+body {
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(230, 75, 230, 0.6), rgba(65, 161, 216, 0.6)), url("https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.15752-9/248428873_1084429149022173_6659150815776638979_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=ae9488&_nc_ohc=f2q4ndTZkFQAX8KmxMs&_nc_ht=scontent.fsgn8-2.fna&oh=03_AVKPvv9gEqM_12YkoP58GVTlNYrUJ6xmDS8Yd8gpXBVQ3A&oe=6232B764");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}

@@ -1,0 +1,71 @@
+<div class="card">
+  <div class="card-header text-center">
+    <h2><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+      KYUN SHOPPING</h2>
+  </div>
+  {{!  }}
+  <div class="card-body">
+    <table class="table table-hover">
+
+      {{#if this.length}}
+        <div class="card-body">
+          <h class="card-text">No Data</h>
+        </div>
+      {{else}}
+
+        <thead>
+          <tr>
+            <th class="text-center">ID</th>
+            <th>Products</th>
+            <th>Price</th>
+            <th>Rest</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+        {{!  }}
+        <tbody>
+
+          {{#each this.list}}
+            <tr>
+              <td scope="row" class="text-center">{{id}}</td>
+              <td>{{ProductName}}</td>
+
+              <td><p>
+                  {{Price}}
+                </p></td>
+
+              <td><p>
+                  {{Rest}}
+                </p></td>
+
+              <td class="text-right">
+                <a name="" id="" class="btn btn-success" href="#" role="button">
+                  <i class="fa fa-pencil" aria-hidden="true"></i>
+                </a>
+                <a name="" id="" class="btn btn-danger" href="#" role="button">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+
+      {{/if}}
+
+    </table>
+  </div>
+  <div class="card-footer text-muted text-center">
+    <a
+      class="btn btn-outline-success mb-2"
+      href="/admin/product/add"
+      role="button"
+    >
+      <i class="fa fa-plus-circle" aria-hidden="true"></i>
+      ADD PRODUCTS
+    </a>
+    <br />
+    <i>
+      KYUN SHOPPING - BRING TO YOU THE BEST SERVICE
+    </i>
+  </div>
+</div>
